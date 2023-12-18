@@ -17,26 +17,31 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: whitesmoke;
+}
+
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(120, 120, 120);
 }
 
 /* TRANSITION */
-a {
+nav a {
   transition: all 300ms ease;
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
 }
-a:hover {
-  color: gray;
+nav a:hover {
+  color: whitesmoke;
   text-decoration: underline;
   text-underline-offset: 1rem;
   -webkit-text-decoration-color: rgb(181, 181, 181);
@@ -58,6 +63,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  color: whitesmoke;
 }
 
 .nav-links {
@@ -77,6 +83,7 @@ nav {
 /* HAMBURGER MENU */
 #hamburger-nav {
   display: none;
+  color: whitesmoke;
 }
 
 .hamburger-menu {
@@ -95,7 +102,7 @@ nav {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 .hamburger-icon span:first-child {
@@ -121,7 +128,7 @@ nav {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(120, 120, 120);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -170,6 +177,7 @@ section {
 
 .section_pic-container-profile {
   display: flex;
+  justify-content: center;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -208,8 +216,17 @@ section {
 
 /* ICONS */
 .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 2rem;
+  width: 2rem;
   height: 2rem;
+  color: whitesmoke;
+}
+.icon i {
+  color: whitesmoke;
 }
 
 /* BUTTONS */
@@ -222,23 +239,23 @@ section {
 
 .btn-color-1 {
   border: rgb(53, 53, 53) 0.1rem solid;
-  background: rgb(53, 53, 53);
-  color: white;
+  background: whitesmoke;
+  color: black;
 }
 .btn-color-1:hover {
   cursor: pointer;
-  background: rgb(0, 0, 0);
+  background: rgb(53, 53, 53);
+  color: whitesmoke;
 }
 
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
-  background: none;
+  background: whitesmoke;
 }
 .btn-color-2:hover {
   cursor: pointer;
   background: rgb(53, 53, 53);
-  color: white;
-  background: rgb(255, 255, 255) 0.1rem solid;
+  color: whitesmoke;
 }
 
 /* ABOUT SECTION */
@@ -268,34 +285,46 @@ section {
   flex-direction: column;
   display: flex;
 }
+.about-details-container h3 {
+  color: whitesmoke;
+}
 
 .about-pic {
   border-radius: 2rem;
 }
 
 .arrow {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: black;
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
 
 .details-container {
+  background-color: black;
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
+  border: rgb(100, 100, 100) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+.details-container .icon {
+  font-size: 1.5rem;
 }
 
 /* EXPERIENCE SECTION */
 #experience {
   position: relative;
+  color: whitesmoke;
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(120, 120, 120);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -323,8 +352,9 @@ section {
   gap: 0.5rem;
 }
 
-article .icon {
+article i.experience-icon {
   cursor: default;
+  font-size: 1.3rem;
 }
 
 /* PROJECTS SECTION */
@@ -367,7 +397,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: black;
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -381,6 +411,15 @@ article .icon {
 }
 .contact-info-container p {
   font-size: larger;
+  color: whitesmoke;
+}
+.contact-info-container p i {
+  color: whitesmoke;
+  margin-right: 0.5rem;
+}
+.contact-info-container p a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .contact-icon {
